@@ -317,7 +317,13 @@ TextStyle fontStyleBold32 = TextStyle(
     color: ColorConst.textColor,
     fontWeight: FontAsset.bold);
 
-/// Black
+/// Black/
+
+TextStyle fontStyleBlack23 = TextStyle(
+    fontSize: Dimensions.sp23,
+    fontFamily: FontAsset.raleway,
+    color: ColorConst.textColor,
+    fontWeight: FontAsset.black);
 TextStyle fontStyleBlack30 = TextStyle(
     fontSize: Dimensions.sp30,
     fontFamily: FontAsset.raleway,

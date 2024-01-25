@@ -12,9 +12,9 @@ class HomeScreen extends StatelessWidget {
   List<String> categories = ['All Shoes', 'Outdoor', 'Tennis', 'Running'];
   RxList<String> selectedCategories = RxList<String>([]);
 
-  List<String> popularShoesName = [];
-  List<String> popularShoesAsset = [];
-  List<String> popularShoesAllAsset = [];
+  // List<String> popularShoesName = [];
+  // List<String> popularShoesAsset = [];
+  // List<String> popularShoesAllAsset = [];
 
   @override
   Widget build(BuildContext context) {
@@ -172,6 +172,8 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+
+              // POPULAR SHOES
               Padding(
                 padding: EdgeInsets.all(Dimensions.commonPaddingForScreen),
                 child: Row(
@@ -205,7 +207,43 @@ class HomeScreen extends StatelessWidget {
                         product: ProductDataModel.sampleProductData[index]);
                   },
                 ),
-              )
+              ),
+
+              // NEW Arrivals
+              Padding(
+                padding: EdgeInsets.all(Dimensions.commonPaddingForScreen),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      AppString.newArrivals,
+                      style: fontStyleSemiBold16,
+                    ),
+                    InkWell(
+                      onTap: () {},
+                      child: Text(
+                        AppString.seeAll,
+                        style: fontStyleMedium13.apply(
+                            color: ColorConst.blueColor),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: Dimensions.h251,
+                child: ListView.builder(
+                  physics: const BouncingScrollPhysics(),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: Dimensions.commonPaddingForScreen),
+                  scrollDirection: Axis.horizontal,
+                  itemCount: ProductDataModel.sampleProductData2.length,
+                  itemBuilder: (context, index) {
+                    return ProductCard(
+                        product: ProductDataModel.sampleProductData2[index]);
+                  },
+                ),
+              ),
             ],
           ),
         ),

@@ -27,7 +27,8 @@ class ImageAsset {
 
   /// 3d Asset
   static const String perfume3d = "assets/images/justperfume.glb";
-
+  static const String leatherShoes3d = "assets/images/leather_shoes.glb";
+  static const String nikeShoes3d = "assets/images/nike_shoes.glb";
 
   /// shoes
   static const String airforce1 = "assets/images/airforce1.png";
@@ -38,7 +39,6 @@ class ImageAsset {
   static const String airjordan2 = "assets/images/airjordan2.jpg";
   static const String airjordan3 = "assets/images/airjordan3.jpg";
   static const String airjordan4 = "assets/images/airjordan4.jpg";
-
 
   static const String noConnection = "assets/images/no_connection.jpg";
   static const String icForceUpdate = "assets/images/ic_force_update.png";
@@ -51,6 +51,7 @@ class ImageAsset {
   static const String icTextfieldSearchIcon = "";
   static const String icNotification = "";
   static const String icAppName = "";
+
   // static const String icFilter = "assets/images/ic_filter_icon.png";
   static const String icMenu = "assets/images/ic_drawer_icon.png";
 

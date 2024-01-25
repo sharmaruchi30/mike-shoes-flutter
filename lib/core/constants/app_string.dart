@@ -62,6 +62,7 @@ class AppString {
 
   // Product View Screen
   static const String sneakerShop = "Sneaker Shop";
+  static const String addToCart = "Add to cart";
 
   // FORGOT PASSWORD SCREEN
   static const String forgotPassword = "Forgot Password";

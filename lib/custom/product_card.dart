@@ -16,6 +16,7 @@ class ProductCard extends StatelessWidget {
     return GestureDetector(
       behavior: HitTestBehavior.opaque,
       onTap: () => Get.to(() => ProductViewScreen(
+            product: product,
             assets: product.asset,
             assets3d: product.asset3d,
           )),
@@ -34,9 +35,9 @@ class ProductCard extends StatelessWidget {
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(Dimensions.r12),
                   topRight: Radius.circular(Dimensions.r12)),
-              child: CustomAssetImage(
+              child: CustomNetworkImage(
                 image: product.asset[0],
-                onTap: null,
+                // onTap: null,
                 height: Dimensions.h150,
                 width: Get.width / 2,
               ),

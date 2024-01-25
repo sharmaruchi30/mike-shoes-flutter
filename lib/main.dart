@@ -28,8 +28,9 @@ Future<void> main() async {
   // await initializeTeams();
   Loader.instance.init();
   orientations();
-
-  runApp(const MyApp());
+  Future.delayed(const Duration(milliseconds: 500), () {
+    runApp(const MyApp());
+  });
 }
 
 void orientations() {

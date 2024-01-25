@@ -66,6 +66,7 @@ dependencies:
   lottie: ^3.0.0
   model_viewer_plus: ^1.7.0
   carousel_slider: ^4.2.1
+  readmore: ^2.2.0
 
   # Useful pub packages_info:
   #  expandable: ^5.0.1
