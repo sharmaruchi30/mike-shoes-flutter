@@ -10,9 +10,22 @@ class ImageAsset {
 
   static const String lottieSmile = "assets/images/smile.json";
 
+  static const String icBack = "assets/icons/ic_back.svg";
+
   /// LOGIN SCREEN
   static const String icGoogle = "assets/icons/ic_google.svg";
   static const String icEmail = "assets/icons/ic_email.svg";
+
+  // DRAWER SCREEN
+  static const String icOrder = "assets/icons/ic_order.svg";
+  static const String icSettings = "assets/icons/ic_settings.svg";
+  static const String icSignOut = "assets/icons/ic_signout.svg";
+
+  /// BOTTOM NAV BAR
+  static const String icHome = "assets/icons/ic_home.svg";
+  static const String icHeart = "assets/icons/ic_heart.svg";
+  static const String icNotification = "assets/icons/ic_notifications.svg";
+  static const String icProfile = "assets/icons/ic_profile.svg";
 
   /// HOME SCREEN
   static const String icHamburger = "assets/icons/ic_hamburger.svg";
@@ -20,7 +33,6 @@ class ImageAsset {
   static const String icBag = "assets/icons/ic_bag.svg";
   static const String icFilter = "assets/icons/ic_filter.svg";
   static const String icSearch = "assets/icons/ic_search.svg";
-  static const String icHeart = "assets/icons/ic_heart.svg";
   static const String icHeartFilled = "assets/icons/ic_heart_filled.svg";
   static const String shoe1 = "assets/images/shoe1.png";
   static const String shoe2 = "assets/images/shoe2.png";
@@ -49,7 +61,6 @@ class ImageAsset {
   static const String icAppLogo = "";
   static const String icSearchCustom = "assets/images/ic_search_icon.png";
   static const String icTextfieldSearchIcon = "";
-  static const String icNotification = "";
   static const String icAppName = "";
 
   // static const String icFilter = "assets/images/ic_filter_icon.png";

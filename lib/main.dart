@@ -4,7 +4,8 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 // import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_project_base/features/onboarding/onboarding_screen.dart';
+import 'package:flutter_project_base/features/bottomnavbar/app_bottom_navbar.dart';
+import 'package:flutter_project_base/features/drawer/custom_drawer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -109,6 +110,8 @@ class _MyAppState extends State<MyApp> {
                 },
               ),
               theme: ThemeData(
+                splashColor: ColorConst.blueSecondaryColor.withOpacity(0.2),
+                highlightColor: ColorConst.blueSecondaryColor.withOpacity(0.1),
                 appBarTheme: const AppBarTheme(
                   elevation: 0.0,
                   color: Colors.blueGrey,
@@ -123,7 +126,7 @@ class _MyAppState extends State<MyApp> {
               title: AppString.appName,
               // onGenerateRoute: Routers.generateRoute,
               routes: const <String, WidgetBuilder>{},
-              home: OnboardingScreen(),
+              home: const CustomDrawer(),
             ));
       },
     );

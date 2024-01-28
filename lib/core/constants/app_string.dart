@@ -45,6 +45,16 @@ class AppString {
   static const String pleaseCheckYourEmailToSeeTheVerificationCode =
       "Please check your email to see the verification code";
 
+  // DRAWER SCREEN
+
+  static const String profile = "Profile";
+  static const String myCart = "My Cart";
+  static const String favorite = "Favourite";
+  static const String orders = "Orders";
+  static const String notifications = "Notifications";
+  static const String settings = "Settings";
+  static const String signOut = "Sign Out";
+
   // HOME SCREEN
   static const String lookingForShoes = "Looking for shoes";
   static const String selectCategory = "Select Category";
@@ -58,7 +68,6 @@ class AppString {
   static const String mikeJordan = "Mike Jordan";
   static const String mikeAirMax = "Mike Air Max";
   static const String newArrivals = "New Arrivals";
-
 
   // Product View Screen
   static const String sneakerShop = "Sneaker Shop";

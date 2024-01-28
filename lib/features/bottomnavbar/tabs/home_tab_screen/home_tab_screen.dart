@@ -4,13 +4,16 @@ import 'package:flutter_project_base/core/model/design_model/product_data_model.
 import 'package:flutter_project_base/core/widgets/custom_image.dart';
 import 'package:flutter_project_base/core/widgets/text_field/text_field/my_text_field.dart';
 import 'package:flutter_project_base/custom/product_card.dart';
+import 'package:flutter_project_base/features/bottomnavbar/tabs/home_tab_screen/cart_screen.dart';
 import 'package:get/get.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({super.key});
+class HomeTabScreen extends StatelessWidget {
+  final Function() openDrawer;
 
-  List<String> categories = ['All Shoes', 'Outdoor', 'Tennis', 'Running'];
-  RxList<String> selectedCategories = RxList<String>([]);
+  HomeTabScreen({super.key, required this.openDrawer});
+
+  final List<String> categories = ['All Shoes', 'Outdoor', 'Tennis', 'Running'];
+  final RxList<String> selectedCategories = RxList<String>([]);
 
   // List<String> popularShoesName = [];
   // List<String> popularShoesAsset = [];
@@ -37,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(Dimensions.r40),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(Dimensions.r40),
-                            onTap: () {},
+                            onTap: openDrawer,
                             child: Container(
                                 padding: EdgeInsets.all(Dimensions.w15),
                                 decoration: const BoxDecoration(
@@ -56,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(Dimensions.r40),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(Dimensions.r40),
-                            onTap: () {},
+                            onTap: () => Get.to(CartScreen()),
                             child: Container(
                                 padding: EdgeInsets.all(Dimensions.w10),
                                 decoration: const BoxDecoration(

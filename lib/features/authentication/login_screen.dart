@@ -4,7 +4,7 @@ import 'package:flutter_project_base/core/widgets/custom_image.dart';
 import 'package:flutter_project_base/core/widgets/text_field/text_field/my_text_field.dart';
 import 'package:flutter_project_base/features/authentication/forgot_password_screen.dart';
 import 'package:flutter_project_base/features/authentication/register_screen.dart';
-import 'package:flutter_project_base/features/bottomnavbar/tabs/home_tab_screen/home_screen.dart';
+import 'package:flutter_project_base/features/drawer/custom_drawer.dart';
 import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -140,7 +140,7 @@ class LoginScreen extends StatelessWidget {
               MyButton(
                 height: Dimensions.h45,
                 title: AppString.signIn,
-                onPressed: () => Get.to(() => HomeScreen()),
+                onPressed: () => Get.to(() => const CustomDrawer()),
                 btnBgColor: ColorConst.blueColor,
               ),
               SizedBox(

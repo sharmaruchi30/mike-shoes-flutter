@@ -67,6 +67,7 @@ dependencies:
   model_viewer_plus: ^1.7.0
   carousel_slider: ^4.2.1
   readmore: ^2.2.0
+  flutter_slidable: ^3.0.1
 
   # Useful pub packages_info:
   #  expandable: ^5.0.1
